@@ -35,11 +35,11 @@ const About = () => {
           iconStyle={{ background: "rgb(233, 30, 99)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            Through my ongoing journey of self-directed learning, I have worked
-            diligently to establish a solid foundation in both front-end and
-            back-end development. Additionally, my involvement in volunteer
-            activities has greatly enhanced my communication, teamwork, and
-            interpersonal skills.
+            I completed my Bachelor of Science in Computer Science from Varendra University in 
+            February 2024. Currently, I am pursuing a Master of Engineering in Computer Science 
+            and Engineering at Rajshahi University. In this program, I am focusing on various 
+            advanced topics including project management, software architecture, .NET development, 
+            database management using Oracle, and network engineering with Cisco technologies.
           </h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement
@@ -49,12 +49,12 @@ const About = () => {
           iconStyle={{ background: "rgb(16, 204, 82)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            I am proud to have achieved notable accomplishments, including
-            participation in the Hult Prize Ideal Contest, the ICPC Programming
-            Contest, and winning the Tech Debate Contest as part of a successful
-            team. These experiences have not only allowed me to apply my
-            technical knowledge but have also strengthened my critical thinking,
-            problem-solving, and ability to perform under pressure.
+            I have gain 1 year and 1 month of professional experience, during which I&apos;ve had 
+            the opportunity to learn and work with a variety of new technologies. In my current 
+            role as a Junior Software Developer at Business Automation Ltd, I primarily work with 
+            Vue.js, Laravel, MySQL, MongoDB, React, and Node.js. This experience has allowed me to 
+            enhance my skills in both front-end and back-end development, contributing to a range 
+            of dynamic web and software projects.
           </h3>
         </VerticalTimelineElement>
       </VerticalTimeline>
