@@ -20,12 +20,12 @@ const About = () => {
           iconStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
         >
           <h3 className="vertical-timeline-element-title">
-            I am deeply committed to self-improvement and continuous learning,
-            especially since the beginning of this year when I started my
-            journey to become a web developer. Every day, I dedicate myself to
-            refining my skills and expanding my knowledge in technologies such
-            as HTML, CSS, Bootstrap, Tailwind, Node.js, React.js, JavaScript,
-            MongoDB, and Firebase.
+            I'm currently pursuing a master's degree in Computer Science and Engineering (CSE) at 
+            Rajshahi University in the evening. In addition, I am working as a Junior Software 
+            Developer at Business Automation Ltd, where I have been gaining valuable experience for 
+            the past 10 months. With a total of 1 year and 1 month of professional experience in 
+            software development, I am eager to continue expanding my skills and contributing to 
+            impactful projects.
           </h3>
         </VerticalTimelineElement>
         <VerticalTimelineElement

@@ -7,7 +7,7 @@ import "react-lazy-load-image-component/src/effects/opacity.css";
 const Banner = () => {
   const handleDownloadResume = () => {
     window.open(
-      "https://drive.google.com/file/d/1fcNSwgYyC-g2NnO2ZUH5YdLofqGAX9Bj/view?usp=sharing",
+      "https://drive.google.com/file/d/1ckiU_7GqbfbWPUTu--o5tDwpqO4T1Tqb/view?usp=sharing",
       "_blank"
     );
   };
@@ -29,7 +29,7 @@ const Banner = () => {
             <h1 className="text-2xl font-semibold mt-2">
               <Typewriter
                 options={{
-                  strings: ["Junior Front-End Web Developer"],
+                  strings: ["Junior Software Developer"],
                   autoStart: true,
                   loop: true,
                   delay: 100,
@@ -37,10 +37,9 @@ const Banner = () => {
               />
             </h1>
             <p className="py-6">
-              I&apos;m a fourth-year computer science student at Varendra
-              University, deeply passionate about software and web development.
-              Currently, I&apos;m actively seeking an internship opportunity as
-              a web developer to apply and further enhance my skills.
+            I'm currently pursuing a master's degree in Computer Science and Engineering (CSE) at 
+            Rajshahi University in the evening. In addition, I am working as a Junior Software 
+            Developer at Business Automation Ltd.
             </p>
             <Flip>
               <button
