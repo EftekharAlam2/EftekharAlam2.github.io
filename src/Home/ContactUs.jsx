@@ -1,13 +1,15 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
 import Swal from 'sweetalert2'
 
 const ContactUs = () => {
   const form = useRef();
+  const [loading, setLoading] = useState(false);
 
   const sendEmail = (e) => {
     e.preventDefault();
+    setLoading(true);
     emailjs
       .sendForm(
         import.meta.env.VITE_YOUR_SERVICE_ID,
@@ -19,6 +21,7 @@ const ContactUs = () => {
         (result) => {
           console.log(result.text);
           e.target.reset();
+          setLoading(false);
           Swal.fire({
             position: "top-end",
             icon: "success",
@@ -28,6 +31,7 @@ const ContactUs = () => {
           });
         },
         (error) => {
+          setLoading(false);
           Swal.fire({
             icon: "error",
             title: "Something went wrong!",
@@ -73,8 +77,14 @@ const ContactUs = () => {
                 name="message" placeholder="Your message..." required></textarea>
               </div>
             </div>
-            <button className="submit-btn" type="submit" value="Send">
-              Submit
+            <button className={`submit-btn ${loading ? "opacity-50 cursor-not-allowed" : ""}`} type="submit" value="Send" disabled={loading}>
+              {loading ? (
+                <div className="flex justify-center items-center">
+                  <span className="loading loading-spinner loading-lg mr-2"></span>
+                </div>
+              ) : (
+                "Submit"
+              )}
             </button>
           </div>
         </form>
