@@ -2,7 +2,7 @@ import React from 'react';
 import { Link } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 import "./contact.css";
-import { FaFacebook, FaWhatsapp, FaLinkedin, FaGithub } from 'react-icons/fa';
+import { FaFacebook, FaWhatsapp, FaLinkedin, FaGithub, FaInstagram, FaDiscord } from 'react-icons/fa';
 import { FaLocationDot } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 
@@ -84,6 +84,14 @@ const Footer = () => {
             <a href="https://www.facebook.com/eftekhar.alam.54772?mibextid=ZbWKwL" target="_blank"
                 rel="noopener noreferrer" className="text-white text-2xl">
                 <FaFacebook />
+            </a>
+            <a href="https://www.instagram.com/eftekharator/profilecard/?igsh=M2MyMTdmcjZ1aWZz" target="_blank"
+                rel="noopener noreferrer" className="text-white text-2xl">
+                <FaInstagram />
+            </a>
+            <a href="https://discord.com/channels/1294164480317718539/1294164480317718542" target="_blank"
+                rel="noopener noreferrer" className="text-white text-2xl">
+                <FaDiscord />
             </a>
           </div>
         </div>
