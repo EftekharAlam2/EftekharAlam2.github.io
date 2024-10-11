@@ -43,7 +43,7 @@ const ContactUs = () => {
         <form className="form-box" ref={form} onSubmit={sendEmail}>
           <div className="container-block form-wrapper">
             <div className="mob-text">
-              <p className="text-blk contactus-head">
+              <p className="text-blk contactus-head" id="contact">
                 Get in Touch
               </p>
               <p className="text-blk contactus-subhead">
