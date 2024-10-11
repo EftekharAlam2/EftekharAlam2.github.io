@@ -1,6 +1,6 @@
 import { useState } from "react";
-
 import "./skills.css";
+
 const SkillsSection = () => {
   const [hoveredSkill, setHoveredSkill] = useState(null);
 
