@@ -1,3 +1,4 @@
+import React, { useState, useEffect, useRef } from "react";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
@@ -5,14 +6,42 @@ import {
 import "react-vertical-timeline-component/style.min.css";
 
 const About = () => {
+  const [inView, setInView] = useState(false);
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            setInView(true);
+          } else {
+            setInView(false);
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    if (aboutRef.current) {
+      observer.observe(aboutRef.current);
+    }
+
+    return () => {
+      if (aboutRef.current) {
+        observer.unobserve(aboutRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div id="about">
+    <div id="about" ref={aboutRef}>
       <div>
         <h1 className="text-center my-5 mt-20 text-3xl font-semibold">
           About Me
         </h1>
       </div>
-      <VerticalTimeline>
+      <VerticalTimeline key={inView ? "visible" : "hidden"}>
         <VerticalTimelineElement
           className="vertical-timeline-element--work"
           contentStyle={{ background: "rgb(33, 150, 243)", color: "#fff" }}
