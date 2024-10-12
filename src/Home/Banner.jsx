@@ -1,5 +1,5 @@
 import { BiSolidDownload } from "react-icons/bi";
-import { Flip } from "react-awesome-reveal";
+import { Bounce } from "react-awesome-reveal";
 import Typewriter from "typewriter-effect";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
@@ -41,14 +41,14 @@ const Banner = () => {
             Rajshahi University in the evening. In addition, I am working as a Junior Software 
             Developer at Business Automation Ltd.
             </p>
-            <Flip>
+            <Bounce>
               <button
                 className="btn btn-outline btn-accent"
                 onClick={handleDownloadResume}
               >
                 <BiSolidDownload /> Resume
               </button>
-            </Flip>
+            </Bounce>
           </div>
         </div>
       </div>
