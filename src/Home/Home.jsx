@@ -9,6 +9,7 @@ import SkillsSection from "./SkillsSection";
 import { useState, useEffect, useCallback } from "react";
 import { loadSlim } from "tsparticles-slim";
 import { FaArrowUp } from "react-icons/fa";
+import Weather from "./Weather";
 
 const Home = () => {
   const [loading, setLoading] = useState(true);
@@ -58,13 +59,14 @@ const Home = () => {
   }, []);
   return (
     <div>
-      {loading && (
+      {/* {loading && (
         <div className="fixed inset-0 flex justify-center items-center bg-gray-500 bg-opacity-50 z-50">
           <span className="loading loading-bars loading-lg"></span>
         </div>
       )}
 
-      <div className={loading ? "pointer-events-none" : ""}>
+      <div className={loading ? "pointer-events-none" : ""}> */}
+      <div>
         <Particles
           id="tsparticles"
           init={particlesInit}
@@ -139,6 +141,7 @@ const Home = () => {
         <About></About>
         <SkillsSection></SkillsSection>
         <Project></Project>
+        <Weather></Weather>
         <ContactUs></ContactUs>
         <Footer></Footer>
       </div>

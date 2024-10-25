@@ -43,6 +43,7 @@ jobs:
           VITE_YOUR_SERVICE_ID: ${{ secrets.VITE_YOUR_SERVICE_ID }}
           VITE_YOUR_TEMPLATE_ID: ${{ secrets.VITE_YOUR_TEMPLATE_ID }}
           VITE_YOUR_PUBLIC_KEY: ${{ secrets.VITE_YOUR_PUBLIC_KEY }}
+          VITE_YOUR_WEATHER_KEY: ${{ secrets.VITE_YOUR_WEATHER_KEY }}
       - name: Setup Pages
         uses: actions/configure-pages@v4
       - name: Upload artifact

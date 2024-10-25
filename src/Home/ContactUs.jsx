@@ -91,7 +91,7 @@ const ContactUs = () => {
         <div className="responsive-cell-block wk-desk-7 wk-ipadp-12 wk-tab-12 wk-mobile-12" id="i772w">
           <div className="map-part">
             <p className="text-blk map-contactus-head" id="w-c-s-fc_p-1-dm-id">
-              Reach me at
+              Reach me
             </p>
             <div className="map-box container-block mapouter">
               <div className="gmap_canvas">

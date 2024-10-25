@@ -16,12 +16,14 @@ const Banner = () => {
     <div>
       <div className="hero min-h-min">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <LazyLoadImage
-            src="https://i.ibb.co/5LchZk3/ek.png"
-            alt="Profile"
-            effect="opacity"
-            className="max-w-sm rounded-lg"
-          />
+          <div className="w-full md:max-w-sm">
+            <LazyLoadImage
+              src="https://i.ibb.co/5LchZk3/ek.png"
+              alt="Profile"
+              effect="opacity"
+              className="rounded-lg"
+            />
+          </div>
           <div>
             <h1 className="text-4xl md:text-5xl font-bold">
               MD EFTEKHARUL ALAM
