@@ -8,6 +8,7 @@ export default defineConfig({
   plugins: [
     react(),
     VitePWA({
+      manifest: 'manifest.json',
       registerType: 'autoUpdate',
       includeAssets: ['favicon.svg', 'favicon.ico', 'robots.txt', 'apple-touch-icon.png'],
       manifest: {
@@ -16,15 +17,16 @@ export default defineConfig({
         description: 'A showcase of my projects',
         theme_color: '#ffffff',
         background_color: '#ffffff',
-        start_url: '/',
+        start_url: '/eftekharalam2.github.io/',
+        scope: '/eftekharalam2.github.io/', 
         icons: [
           {
-            src: 'icon.png',
+            src: '/eftekharalam2.github.io/icon.png',
             sizes: '511x511',
             type: 'image/png'
           },
           {
-            src: 'icon.png',
+            src: '/eftekharalam2.github.io/icon.png',
             sizes: '511x511',
             type: 'image/png'
           }
