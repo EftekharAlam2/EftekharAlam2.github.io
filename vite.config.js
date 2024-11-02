@@ -13,26 +13,21 @@ const manifestForPlugIn = {
       src: '/icon.png',
       sizes:'511x511',
       type:'image/png',
-      purpose:'favicon'
-    },
-    {
-      src:'/icon.png',
-      sizes:'511x511',
-      type:'image/png',
-      purpose:'favicon'
+      purpose: 'any'
     }
   ],
   theme_color: '#ffffff',
   background_color: '#ffffff',
   display:"standalone",
-  scope: "/",
-  start_url:"/",
+  scope: ".",
+  start_url:".",
   orientation:'portrait'
   }
 }
 
 // https://vitejs.dev/config/
 export default defineConfig({
+  base: '/',
   plugins: [
     react(),
     VitePWA(manifestForPlugIn)
