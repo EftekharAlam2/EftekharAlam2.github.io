@@ -14,15 +14,17 @@ export default defineConfig({
         short_name: 'Eftekhar',
         description: 'A showcase of my projects',
         theme_color: '#ffffff',
+        background_color: '#ffffff',
+        start_url: '/',
         icons: [
           {
-            src: 'public/icon.png',
-            sizes: '192x192',
+            src: 'icon.png',
+            sizes: '511x511',
             type: 'image/png'
           },
           {
-            src: 'public/icon.png',
-            sizes: '512x512',
+            src: 'icon.png',
+            sizes: '511x511',
             type: 'image/png'
           }
         ]
