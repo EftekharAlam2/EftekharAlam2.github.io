@@ -25,8 +25,8 @@ const manifestForPlugIn = {
   theme_color: '#ffffff',
   background_color: '#ffffff',
   display:"standalone",
-  scope: ".",
-  start_url:".",
+  scope: "/",
+  start_url:"/",
   orientation:'portrait'
   }
 }
